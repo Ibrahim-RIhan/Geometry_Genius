@@ -1,3 +1,4 @@
+let serial = 0;
 // Triangle Area 
 document.getElementById('btn-triangle').addEventListener('click', function (event) {
     const area = pointFiveAreaCalculator(event);
@@ -5,7 +6,8 @@ document.getElementById('btn-triangle').addEventListener('click', function (even
     }
     else {
         const element = elementFunction(event);
-        displayData(element, area);
+        serial = serial + 1;
+        displayData(element, area, serial);
     }
 })
 
@@ -16,7 +18,9 @@ document.getElementById('btn-rectangle').addEventListener('click', function (eve
     }
     else {
         const element = elementFunction(event);
-        displayData(element, area);
+        serial = serial + 1;
+        displayData(element, area, serial);
+
     }
 });
 
@@ -27,7 +31,9 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
     }
     else {
         const element = elementFunction(event);
-        displayData(element, area);
+        serial = serial + 1;
+        displayData(element, area, serial);
+
     }
 });
 
@@ -38,7 +44,9 @@ document.getElementById('btn-rhombus').addEventListener('click', function (event
     }
     else {
         const element = elementFunction(event);
-        displayData(element, area);
+        serial = serial + 1;
+        displayData(element, area, serial);
+
     }
 
 });
@@ -49,7 +57,8 @@ document.getElementById('btn-pentagon').addEventListener('click', function (even
     }
     else {
         const element = elementFunction(event);
-        displayData(element, area);
+        serial = serial + 1;
+        displayData(element, area, serial);
     }
 
 });
@@ -67,7 +76,9 @@ document.getElementById('btn-ellipse').addEventListener('click', function (event
         }
         else {
             const element = elementFunction(event);
-            displayData(element, area);
+            serial = serial + 1;
+            displayData(element, area, serial);
+
         }
     }
     else {

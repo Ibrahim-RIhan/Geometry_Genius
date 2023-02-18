@@ -46,8 +46,33 @@ function displayData(element, area) {
     const areaContainer = document.getElementById('areaContainer');
     const tr = document.createElement('tr');
     tr.innerHTML = `
+<td>${serial}</td>
 <td>${element}</td>
 <td>${area}</td>
 <button class="bg-blue-500 text-center text-xs mt-3 px-2 py-1 text-white rounded-md">ConvertToMeter</button>`;
     areaContainer.appendChild(tr);
 }
+
+
+
+// Random Color On Hover
+// function randomColor() {
+//     let color = [];
+//     for (let i = 0; i < 3; i++) {
+//       color.push(Math.floor(Math.random() * 256));
+//     }
+//     const rgb = 'rgb(' + color.join(', ') + ')';
+//   document.addEventListener("mouseover", function(){
+//   const cardElement = document.getElementsByClassName('cardElement'); 
+//   for (let i = 0; i < cardElement.length; i++) {
+//     cardElement[i].style.backgroundColor = rgb;
+//   }});
+//   return elementFunction(event);
+  
+//   } 
+  
+//   document.addEventListener("mouseover", function(){
+//   const cardElement = document.getElementsByClassName('cardElement'); 
+//   for (let i = 0; i < cardElement.length; i++) {
+//     cardElement[i].style.backgroundColor = randomColor();
+//   }});
