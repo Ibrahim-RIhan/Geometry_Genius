@@ -7,7 +7,7 @@ function pointFiveAreaCalculator(event) {
     const num2 = parseFloat(num2String);
     if (num1 > 0 && num2 > 0 && typeof num1 === 'number' && typeof num2 === 'number') {
         const areaPrevious = 0.5 * parseFloat(num1) * parseFloat(num2);
-        const area = areaPrevious.toFixed(0) + "m²";
+        const area = areaPrevious.toFixed(0) + "cm²";
         return area;
     }
     else {
@@ -24,7 +24,7 @@ function areaFunction(event) {
     const num2 = parseFloat(num2String);
     if (num1 > 0 && num2 > 0 && typeof num1 === 'number' && typeof num2 === 'number') {
         const areaPrevious = parseFloat(num1) * parseFloat(num2);
-        const area = areaPrevious.toFixed(0) + "m²";
+        const area = areaPrevious.toFixed(0) + "cm²";
         return area;
     }
     else {

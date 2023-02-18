@@ -36,29 +36,39 @@ document.getElementById('btn-rhombus').addEventListener('click', function (event
     const area = pointFiveAreaCalculator(event);
     if (area === undefined) {
     }
-    else{
+    else {
         const element = elementFunction(event);
         displayData(element, area);
     }
-   
+
 });
 // Pentagon Area 
 document.getElementById('btn-pentagon').addEventListener('click', function (event) {
-    
-    
     const area = pointFiveAreaCalculator(event);
-    
-})
+    if (area === undefined) {
+    }
+    else {
+        const element = elementFunction(event);
+        displayData(element, area);
+    }
+
+});
 //  Ellipse Area 
 
 document.getElementById('btn-ellipse').addEventListener('click', function (event) {
-    const num1 = event.target.parentNode.parentNode.children[2].children[0].value;
-    const num2 = event.target.parentNode.parentNode.children[2].children[2].value;
-    if (num1, num2 >= 0 && typeof num1, num2 === 'number') {
+    const num1String = event.target.parentNode.parentNode.children[2].children[0].value;
+    const num2String = event.target.parentNode.parentNode.children[2].children[2].value;
+    const num1 = parseFloat(num1String);
+    const num2 = parseFloat(num2String);
+    if (num1 > 0 && num2 > 0 && typeof num1 === 'number' && typeof num2 === 'number') {
         const areaPrevious = 3.14 * parseFloat(num1) * parseFloat(num2);
-        const area = areaPrevious.toFixed(0) + "m²";
-        const element = elementFunction(event);
-        displayData(element, area);
+        const area = areaPrevious.toFixed(0) + "cm²";
+        if (area === undefined) {
+        }
+        else {
+            const element = elementFunction(event);
+            displayData(element, area);
+        }
     }
     else {
         alert("Please enter a valid Positive number");
