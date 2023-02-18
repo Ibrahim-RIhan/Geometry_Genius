@@ -1,3 +1,12 @@
+// Blogs Page 
+document.getElementById('btn-blog').addEventListener('click' , function(){
+    window.location.href = 'blog.html';
+    
+})
+
+
+
+
 let serial = 0;
 // Triangle Area 
 document.getElementById('btn-triangle').addEventListener('click', function (event) {
