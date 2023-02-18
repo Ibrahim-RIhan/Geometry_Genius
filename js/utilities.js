@@ -33,7 +33,7 @@ function areaFunction(event) {
 }
 
 
-// Element Function 
+// Element Shape Name Function 
 function elementFunction(event) {
     const element = event.target.parentNode.parentNode.children[0].innerText;
     return element;
@@ -53,26 +53,3 @@ function displayData(element, area) {
     areaContainer.appendChild(tr);
 }
 
-
-
-// Random Color On Hover
-// function randomColor() {
-//     let color = [];
-//     for (let i = 0; i < 3; i++) {
-//       color.push(Math.floor(Math.random() * 256));
-//     }
-//     const rgb = 'rgb(' + color.join(', ') + ')';
-//   document.addEventListener("mouseover", function(){
-//   const cardElement = document.getElementsByClassName('cardElement'); 
-//   for (let i = 0; i < cardElement.length; i++) {
-//     cardElement[i].style.backgroundColor = rgb;
-//   }});
-//   return elementFunction(event);
-  
-//   } 
-  
-//   document.addEventListener("mouseover", function(){
-//   const cardElement = document.getElementsByClassName('cardElement'); 
-//   for (let i = 0; i < cardElement.length; i++) {
-//     cardElement[i].style.backgroundColor = randomColor();
-//   }});
