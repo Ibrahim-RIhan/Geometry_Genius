@@ -80,14 +80,13 @@ document.getElementById('btn-ellipse').addEventListener('click', function (event
     const num2 = parseFloat(num2String);
     if (num1 > 0 && num2 > 0 && typeof num1 === 'number' && typeof num2 === 'number') {
         const areaPrevious = 3.14 * parseFloat(num1) * parseFloat(num2);
-        const area = areaPrevious.toFixed(0) + "cm²";
+        const area = areaPrevious.toFixed(2) + "cm²";
         if (area === undefined) {
         }
         else {
             const element = elementFunction(event);
             serial = serial + 1;
             displayData(element, area, serial);
-
         }
     }
     else {
