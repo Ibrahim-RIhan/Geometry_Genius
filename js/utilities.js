@@ -49,7 +49,7 @@ function displayData(element, area) {
 <td>${serial}</td>
 <td>${element}</td>
 <td>${area}</td>
-<button class="bg-blue-500 text-center text-xs mt-3 px-2 py-1 text-white rounded-md">ConvertToMeter</button>`;
+<button class="bg-blue-500 text-center text-sm mt-3 px-2 py-1 text-white rounded-md">ConvertToMeter</button>`;
     areaContainer.appendChild(tr);
 }
 
